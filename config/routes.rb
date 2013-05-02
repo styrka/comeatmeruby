@@ -1,4 +1,11 @@
 Murista::Application.routes.draw do
+  resources :users
+
+  root to: 'static#home'
+  
+  match '/home',   to: 'static#home'
+  match '/signup', to: 'users#new'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
