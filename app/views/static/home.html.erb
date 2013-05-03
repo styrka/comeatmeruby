@@ -1,3 +1,46 @@
 <% provide(:title, 'Home') %>
 <h1>Home</h1>
 <p>Finally</p>
+    <article class="row">
+      <section class="one whole padded">
+        <h2 id="streamTitle" class="inline">Streams</h2>
+        <nav id="searchBar" class="inline">
+          <ul>
+            <li style="width:200px">
+              <p><input type="text" id="streamName"/></p>
+            </li>
+            <li>
+              <a class="nocolor buttonGap" id="streamAdd">Add</a>
+            </li>
+            <li>
+              <a class="nocolor" id="streamClear">Clear</a>
+            </li>
+            <li>
+              <a class="nocolor" id="streamMove">Move</a>
+            </li>
+            <li>
+              <article class="dropdown button nocolor buttonGap">Presets <i class="icon-sort-down"></i>
+                <ul>
+                  <li>
+                    <a class="nocolor" id="streamTop9">Top 9</a>
+                  </li>
+                  <li>
+                    <a class="nocolor" id="streamDota">Dota</a>
+                  </li>
+                  <li>
+                    <a class="nocolor" id="streamWoW">WoW</a>
+                  </li>
+                  <li>
+                    <a class="nocolor" id="streamProm">Promethean</a>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <div>
+        <ul id='streams'>
+        </ul>
+      </div>
+    </article>
