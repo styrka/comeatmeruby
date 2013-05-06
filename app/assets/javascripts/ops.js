@@ -84,7 +84,7 @@ function lastStreamLoad() {
   }
 }
 //stream ui
-$('#streamAdd').click(function() {
+$(document).on('click', '#streamAdd', function() {
   var alreadyIn;
   for (i=0;i<ops.streamSelection.length;i++) {
     if ($('#streamName').val()===ops.streamSelection[i]) {
@@ -97,10 +97,10 @@ $('#streamAdd').click(function() {
   };
   $('#streamName').val('');
 });
-$('#streamClear').click(function() {
+$(document).on('click', '#streamClear', function() {
   emptyStreams();
 });
-$('#streamMove').click(function(){
+$(document).on('click', '#streamMove', function(){
   if (ops.flash.lock) {
     $('#streams').sortable('enable');
     $('#streams').disableSelection();
@@ -114,30 +114,30 @@ $('#streamMove').click(function(){
     ops.flash.lock = true;
   };
 });
-$(document).on("click", "a.remove", function() {
+$(document).on('click', 'a.remove', function() {
   removeA(ops.streamSelection, $(this).parent().parent()[0].id);
   $(this).parent().parent().parent().remove();
   streamCookie();
 });
-$('#streamTop9').click(function() {
+$(document).on('click', '#streamTop9', function() {
   ops.streamSelection = [];
   $('#streams').html('<i class="icon-spinner icon-4x icon-spin"></i>');
   ops.stream = "?limit=9&callback=?";
   loadStreams();
 });
-$('#streamDota').click(function() {
+$(document).on('click', '#streamDota', function() {
   ops.streamSelection = [];
   ops.stream = "?game=Dota+2&limit=9&callback=?";
   $('#streams').html('<i class="icon-spinner icon-4x icon-spin"></i>');
   loadStreams();
 });
-$('#streamWoW').click(function() {
+$(document).on('click', '#streamWoW', function() {
   ops.streamSelection = [];
   ops.stream = "?game=World+of+Warcraft:+Mists+of+Pandaria&limit=9&callback=?";
   $('#streams').html('<i class="icon-spinner icon-4x icon-spin"></i>');
   loadStreams();
 });
-$('#streamProm').click(function() {
+$(document).on('click', '#streamProm', function() {
   ops.streamSelection = [];
   $('#streams').html('<i class="icon-spinner icon-4x icon-spin"></i>');
   streamUpdate(ops.streamProm);

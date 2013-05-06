@@ -67,4 +67,5 @@ Murista::Application.configure do
 
   #Force SSL access and secure cookies.
   config.force_ssl = true
+
 end
