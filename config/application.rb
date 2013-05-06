@@ -60,7 +60,6 @@ module Murista
     config.assets.version = '1.0'
 
     #Fonts
-    #config.assets.path << Rails.root.join('app', 'assets', 'font')
-
+    config.assets.paths << Rails.root.join('app', 'assets', 'font')
   end
 end

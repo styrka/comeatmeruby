@@ -32,9 +32,9 @@ function paginate(tar){
   }, 1000);
 };
 
-//$('document').ready(function() {
-  //feeds();
-  //$('#blag .content').sortable();
-  //$('#blag .content').sortable('disable');
+$('document').ready(function() {
+  feeds();
+  $('#blag .content').sortable();
+  $('#blag .content').sortable('disable');
   //paginate("blag");
-//});
+});
