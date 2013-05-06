@@ -1,46 +1,109 @@
 <% provide(:title, 'Home') %>
-<h1>Home</h1>
-<p>Finally</p>
-    <article class="row">
-      <section class="one whole padded">
-        <h2 id="streamTitle" class="inline">Streams</h2>
-        <nav id="searchBar" class="inline">
-          <ul>
-            <li style="width:200px">
-              <p><input type="text" id="streamName"/></p>
-            </li>
-            <li>
-              <a class="nocolor buttonGap" id="streamAdd">Add</a>
-            </li>
-            <li>
-              <a class="nocolor" id="streamClear">Clear</a>
-            </li>
-            <li>
-              <a class="nocolor" id="streamMove">Move</a>
-            </li>
-            <li>
-              <article class="dropdown button nocolor buttonGap">Presets <i class="icon-sort-down"></i>
-                <ul>
-                  <li>
-                    <a class="nocolor" id="streamTop9">Top 9</a>
-                  </li>
-                  <li>
-                    <a class="nocolor" id="streamDota">Dota</a>
-                  </li>
-                  <li>
-                    <a class="nocolor" id="streamWoW">WoW</a>
-                  </li>
-                  <li>
-                    <a class="nocolor" id="streamProm">Promethean</a>
-                  </li>
-                </ul>
-              </article>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <div>
-        <ul id='streams'>
-        </ul>
+<header>
+  <div class="backgroundAura">
+    <div class="row">
+      <div class="one sixth skip-one">
+        <h1 class="responsive zero" data-compression="8.25"
+          data-min="20" data-max="200"><a class="colortoBG">Styrka</a></h1>
       </div>
-    </article>
+      <div class="one sixth skip four" id="theTime">
+      </div>
+    </div>
+  </div>
+</header>
+<div id="art1">
+</div>
+<div id="art2">
+</div>
+<div id="art3">
+</div>
+<div id="month" class="inline">
+</div>
+<div id="day" class="inline">
+</div>
+<div id="hour" class="inline">
+</div>
+<div id="minute" class="inline">
+</div>
+<div id="second" class="inline">
+</div>
+<div class="container">
+
+  <article class="row">
+    <section class="three fifths right-one padded">
+      <div id="blag">
+        <!--<div class="slider">-->
+          <!--<img src="./images/banner/slide1.jpg" alt=""/>-->
+        <!--</div>-->
+        <!--<img src="http://placehold.it/250x130/198d98/ffffff/" class="pull-left gap-right gap-bottom" alt="" />-->
+        <div class="content">
+        </div>
+        <div class="page_navigation">
+        </div>
+      </div>
+    </section>
+    <aside class="one fifth left-three padded border-right">
+      <h2>Guild</h2>
+      <p><a class="modal block button nocolor" href="http://www.prometheanguild.com/forums/forum.php">Promethean</a></p>
+      <p><a class="modal block button nocolor" href="http://www.worldoflogs.com/guilds/27393/">Logs</a></p>
+      <hr/>
+      <h3>Reference</h3>
+      <p><a class="modal block button nocolor" href="http://www.mmo-champion.com/">MMO-Champion</a></p>
+      <p><a class="modal block button nocolor" href="http://www.wowhead.com/">WoWHead</a></p>
+      <p><a class="modal block button nocolor" href="http://www.wowprogress.com/">WoWProgress</a></p>
+      <p><a class="modal block button nocolor" href="https://docs.google.com/spreadsheet/ccc?key=0Avew1kRL25l9dDM2bWhYa1dvRURNM2JaVF9NaTg4U1E">MW 5.2 BIS</a></p>
+      <hr/>
+      <h1>Welcome</h1>
+      <p>Utility page with new functions coming daily.</p>
+    </aside>
+    <!--<aside class="one fifth padded border-left">-->
+    <!--</aside>-->
+  </article>
+  <hr/>
+  <article class="row">
+    <section class="one whole padded">
+      <h2 id="streamTitle" class="inline">Streams</h2>
+      <nav id="searchBar" class="inline">
+        <ul>
+          <li style="width:200px">
+            <p><input type="text" id="streamName"/></p>
+          </li>
+          <li>
+            <a class="nocolor buttonGap" id="streamAdd">Add</a>
+          </li>
+          <li>
+            <a class="nocolor" id="streamClear">Clear</a>
+          </li>
+          <li>
+            <a class="nocolor" id="streamMove">Move</a>
+          </li>
+          <li>
+            <article class="dropdown button nocolor buttonGap">Presets <i class="icon-sort-down"></i>
+              <ul>
+                <li>
+                  <a class="nocolor" id="streamTop9">Top 9</a>
+                </li>
+                <li>
+                  <a class="nocolor" id="streamDota">Dota</a>
+                </li>
+                <li>
+                  <a class="nocolor" id="streamWoW">WoW</a>
+                </li>
+                <li>
+                  <a class="nocolor" id="streamProm">Promethean</a>
+                </li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <div>
+      <ul id='streams'>
+      </ul>
+    </div>
+  </article>
+  <footer class="footer align-right">
+    <p>nwe 2013 <i class="icon-adjust"> </i></p>
+  </footer>
+</div>
