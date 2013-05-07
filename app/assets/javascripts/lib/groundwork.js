@@ -420,6 +420,12 @@
       return $(this).attr('href', '#iframeModal');
     });
     $('a.modal').on("click", function(e) {
+      if ($(this).hasClass('narrow')) {
+        $('div#iframeModal').addClass('narrow');
+      }
+      else {
+        $('div#iframeModal').removeClass('narrow');
+      }
       $('div#iframeModal iframe').replaceWith('<iframe marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" src="' + $(this).attr('data-url') + '"></iframe>');
       e.preventDefault();
       return false;

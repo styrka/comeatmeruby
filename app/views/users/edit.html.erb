@@ -1,5 +1,5 @@
 <% provide(:title, 'Edit user') %>
-<h1>Update your profile</h1>
+<h1 class='align-center'>Update your profile</h1>
 
 <div class='row'>
   <div>
@@ -9,19 +9,20 @@
       <%= f.label :name %>
       <%= f.text_field :name %>
 
-      <%= f.label :email %>
+      <%= f.label :email, 'E-Mail' %>
       <%= f.text_field :email %>
 
       <%= f.label :password %>
       <%= f.password_field :password %>
 
-      <%= f.label :password_confirmation, 'Confirm Password' %>
+      <%= f.label :password_confirmation, 'Password Confirmation' %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.submit 'Save changes', class: 'btn' %>
+      <%= f.submit 'Save changes', class: 'square block button nocolor' %>
     <% end %>
 
-    <%= gravatar_for @user %>
-    <a href='http://gravatar.com/emails'>Change</a>
+    <%= link_to 'Sign Out', signout_path, class: 'square block button nocolor', method: 'delete' %>
+
+    <%= gravatar_for @user %><a href='http://gravatar.com/emails' class='square block button nocolor'>Change</a>
   </div>
 </div>

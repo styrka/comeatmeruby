@@ -68,6 +68,10 @@ a.remove {
   padding: 1px;
 }
 
+#iframeModal.narrow {
+  width: 250px !important;
+}
+
 #streams {
   list-style-type: none;
   margin: 0;
@@ -209,7 +213,7 @@ a.nocolor:hover, a.nocolor:focus {
 }
 
 .colortoBG {
-  color: #ecf0f1;
+  color: #ecf0f1 !important;
 }
 
 a.colortoBG:hover, a.colortoBG:focus, a.colortoBG:visited:hover, a.colortoBG:visited:focus {
@@ -534,6 +538,10 @@ nav ul ul li:last-child a {
 
 .buttonGap {
   margin-left: 10px;
+}
+
+input[type=submit] {
+  font-family: Helvetica, Arial, Geneva, sans-serif;
 }
 
 button, .button, a.button, a.button:visited, input[type=submit], input[type=button], input[type=reset] {

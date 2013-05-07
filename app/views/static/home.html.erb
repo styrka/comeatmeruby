@@ -3,8 +3,13 @@
   <div class="backgroundAura">
     <div class="row">
       <div class="one sixth skip-one">
+        <% if signed_in? %>
         <h1 class="responsive zero" data-compression="8.25"
-          data-min="20" data-max="200"><a class="colortoBG">Styrka</a></h1>
+          data-min="40" data-max="200"><%= link_to current_user.name, edit_user_path(current_user), :class => 'colortoBG modal narrow' %></h1>
+        <% else %>
+        <h1 class="responsive zero" data-compression="8.25"
+          data-min="40" data-max="200"><%= link_to 'Styrka', signin_path, :class => 'colortoBG modal narrow' %></h1>
+        <% end %>
       </div>
       <div class="one sixth skip four" id="theTime">
       </div>
